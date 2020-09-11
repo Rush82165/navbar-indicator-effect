@@ -1,0 +1,67 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'consolas';
+}
+
+body {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+}
+
+nav {
+   position: absolute;
+   display: flex;
+   top: 0;
+   left: 0;
+   width: 100%;
+   justify-content: space-between;
+   padding: 10px 20px;
+
+   .logo {
+      text-transform: uppercase;
+      font-weight: 800;
+      font-size: 2.5em;
+      text-decoration: none;
+      letter-spacing: 2px;
+      color: #000;
+   }
+
+   ul {
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      li {
+         list-style: none;
+         display: inline-block;
+         margin-right: 30px;
+      }
+   }
+
+   a {
+      position: relative;
+      align-items: center;
+      font-size: 18px;
+      color: #000;
+      text-decoration: none;
+      letter-spacing: 1px;
+      font-weight: 600;
+   }
+
+}
+
+nav #marker {
+   position: absolute;
+   left: 0;
+   height: 3px;
+   width: 0;
+   background: #000;
+   bottom: 10px;
+   transition: 0.5s;
+   border-radius: 4px;
+}
